@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+        <meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+		<meta name="robots" content="all">
+		<meta name="author" content="Tencent-TGideas">
+		<meta name="Copyright" content="Tencent">
+		<meta name="Description" content="聚诚品,更多周边道具商城！" />
+		<meta name="Keywords" content="聚诚品,道聚城,道具商城,周边,穿越火线,英雄联盟,炫舞时代,地下城与勇士,剑灵,王者荣耀" />
+		<title>聚诚品-道聚城官网</title>
+		<link href="__CSS__/common.css" rel="stylesheet">
+		<!-- 页面设计：CP | 页面制作：CP | 创建：2017-06-18-->
+	</head>
+
+	<body>
+		<!-- top-info S -->
+<div class="top-info">
+    <div class="mid">
+        <h2 class="fl">聚诚品，个性彰显，品质至上</h2>
+        <ul class="fr">
+            <!-- 登录前 S-->
+            <li id="unlogin">
+                <a href="javascript:;" id="btn_header_login" title="你好，请登录">你好，请登录</a>
+            </li>
+            <!-- 登录前 E-->
+            <!-- 登录后 S-->
+            <li class="clearfix" id="logined" style="display: none;">
+                <p class="fl login-user"><span id="userinfo"></span><span class="ic19 in comm"></span></p>
+                <a class="fl login-out" href="javascript:;" id="btn_header_logout" title="退出">退出</a>
+                <div class="top-hover">
+                    <div class="jt"></div>
+                    <div class="xg">
+                        <a href="//daoju.qq.com/mall/actual_trade.shtml" target="_blank">订单管理</a>
+                        <a href="//daoju.qq.com/mall/myaddress.shtml" target="_blank">地址管理</a>
+                        <a href="//daoju.qq.com/mall/coupon.shtml" target="_blank">优惠券</a>
+                    </div>
+                </div>
+            </li>
+            <!-- 登录前 E-->
+            <li class="game-nav">
+                <a href="javascript:;" title="游戏导航"><span class="ic03 in comm"></span>游戏导航</a>
+                <div class="top-hover tl">
+                    <div class="jt"></div>
+                    <div id="dj_topinfo" class="xg">
+                        <!--<a href="javascritp:;"><span class="ic14 in comm"></span>英雄联盟</a>
+                        <a href="javascritp:;"><span class="ic15 in comm"></span>穿越火线</a>
+                        <a href="javascritp:;"><span class="ic16 in comm"></span>剑灵</a>
+                        <a href="javascritp:;"><span class="ic17 in comm"></span>冒险岛2</a>
+                        <a href="javascritp:;"><span class="ic18 in comm"></span>QQ炫舞</a>-->
+                    </div>
+                </div>
+                <script type="text/html" id="tpl_topinfo">
+                    
+                </script>
+            </li>
+            <li>
+                <a href="javascript:;"><span class="ic02 in comm"></span>TPC道聚城</a>
+                <div class="top-hover">
+                    <div class="jt"></div>
+                    <div class="xg">
+                        <img class="codeimg" src="../../static/images/code.png" width="96" height="96" />
+                    </div>                    
+                </div>
+            </li>            
+        </ul>
+    </div>
+</div>
+<!-- top-info E -->
+		<!-- top-head S -->
+<div class="top-head">
+	<div class="mid">
+		<!-- logo S -->
+		<a href="index.shtml" class="top-logo t" title="聚诚品">聚诚品</a>
+		<!-- top-nav S -->
+		<ul class="top-nav fl">
+			<!--  li:class="nav-on" -->
+			<li class="nav-on"><a href="{:url('order/entity/entity')}" title="首页">首页</a></li>
+			<li><a href="{:url('order/tpcsy/tpcsy')}" title="发现">返回TPC</a></li>
+		</ul>
+		<!-- top-cont S -->
+		<div class="top-cont fr">
+			<input class="top-soso fl" placeholder="请输入想要找的宝贝"  onfocus="this.placeholder=''" onblur="this.placeholder='请输入想要找的宝贝'"/>
+			<a id="search" class="top-sumbit t comm fl" title="搜索">搜索</a>
+		</div>
+	</div>
+	<a href="buy.shtml?CLICKTAG=jcp.pc.index.cart" class="top-car comm fl" title="购物车" id="blk_header_cart"><span class="comm">0</span></a>
+</div>
+<!-- top-head E -->
+		<!-- banner S -->
+<!-- 		<div class="banner">
+			<ul class="banner-image" id="dj1">
+			</ul>
+			<script type="text/html" id="tpl1">
+				
+			</script>
+			<ul class="banner-rad">
+			</ul>
+		</div> -->
+	    <div class="bann">
+	        <div id="dj1" class="slidebann"></div>
+	        <script type="text/html" id="tpl1">
+	            
+	            <div class="flash_bar">
+	               
+	            </div>
+	        </script>
+	    </div>
+
+		<!-- banner E -->
+		<!-- theme 主题商城 S-->
+		<div class="theme mid">
+			<h3 class="tit01 tit t">主题商城</h3>
+			<ul class="clearfix" id="dj2">
+
+			</ul>
+			<script type="text/html" id="tpl2">
+				
+			</script>
+		</div>
+		<!-- theme 主题商城 E-->
+		<!-- product 诚意推荐 S-->
+		<div class="product mid">
+			<h3 class="tit02 tit t">诚意推荐</h3>
+			<ul class="pro-list clearfix" id="dj3">
+
+			</ul>
+			<script type="text/html" id="tpl3">
+
+			</script>
+		</div>
+		<!-- product 诚意推荐 E-->
+		<!-- footer S -->
+<div class="footer">
+    <div class="mid clearfix">
+        <a href="//daoju.qq.com/" target="_bank" class="footer-djc" title="道聚城"><img
+                src="../../static/images/djc_logo.png" width="187" alt="道聚城"/></a>
+        <ul class="footer-info fl">
+            <li><a href="/help.shtml?gotab=1" target="_blank"><span class="ic04 in comm"></span>购物指南</a></li>
+            <li><a href="/help.shtml?gotab=2" target="_blank"><span class="ic07 in comm"></span>配送方式</a></li>
+            <li><a href="/help.shtml?gotab=3" target="_blank"><span class="ic05 in comm"></span>常见操作</a></li>
+            <li><a href="/help.shtml?gotab=4" target="_blank"><span class="ic06 in comm"></span>售后服务</a></li>
+            <li><a href="/help.shtml?gotab=5" target="_blank"><span class="ic08 in comm"></span>关于我们</a></li>
+        </ul>
+        <ul class="footer-code fl">
+            <li>
+                <img src="../../static/images/jcp_gzh.jpg" width="100" height="100" alt="道聚城公众号"/>
+                <p>聚诚品公众号</p>
+            </li>
+            <li>
+                <img src="../../static/images/djc_gzh.jpg" width="100" height="100" alt="道聚城公众号"/>
+                <p>道聚城公众号</p>
+            </li>
+            <li>
+                <img src="../../static/images/djc_app.png" width="100" height="100" alt="掌上道聚城"/>
+                <p>掌上道聚城</p>
+            </li>
+        </ul>
+    </div>
+</div>
+<script src="__JS__/jquery-1.11.3.min.js"></script>
+<script src="__JS__/milo (4).js"></script>
+<script src="__JS__/gamelist.js"></script>
+<script src="__JS__/foot (3).js"></script>
+<script type="text/javascript">
+    //top-info
+    $('.top-info li,.top-hover').hover(function () {
+        $(this).find('.top-hover').toggle();
+    })
+    //banner
+    var bannerAdd = {
+        ban: $('.banner-image'),
+        rad: $('.banner-rad'),
+        addCont: function () {
+            var t = this,
+                con = t.ban.find('li');
+            t.rad.html('');
+            con.each(function (index) {
+                var h = t.rad.html(),
+                    m = index ? '<li></li>' : '<li class=on></li>';
+                t.rad.html(h + m);
+            })
+            con.eq(0).fadeIn();
+        },
+        init: function () {
+            var t = this;
+            t.addCont();
+            var con = t.ban.find('li'),
+                nav = t.rad.find('li'),
+                i = 0;
+            nav.on('mouseover', function () {
+                i = $(this).index();
+                addEve(i);
+            });
+            var addEve = function (o) {
+                nav.removeClass('on').eq(o).addClass('on');
+                con.fadeOut().eq(o).fadeIn();
+            }
+            var autoEve = function () {
+                i++;
+                if (i >= nav.length) i = 0;
+                addEve(i);
+            }
+            var tim = setInterval(autoEve, 5000);
+            con.hover(function () {
+                clearInterval(tim);
+            }, function () {
+                tim = setInterval(autoEve, 5000);
+            })
+        }
+    };
+    var w = {
+        //重载部分方法
+        init: function (callback) {
+            need('daoju.zb.comm', function (comm) {
+                comm.getPageBiz = function () {
+                    var ret = window.location.pathname.replace(/^\/([^\/]+).*/, '$1');
+                    if (window.biz != undefined) {
+                        ret = window.biz;
+                    } else if (ret == 'mall') { //大商城会用到
+                        ret = 'daoju';
+                    }
+                    return ret;
+                };
+                $.isFunction(callback) && callback(comm);
+            });
+        },
+        //游戏导航
+        loadGamelist: function () {
+            var gamelist = [];
+            $.each(gamelist_zb, function (k, v) {
+                if (v.online_pc == "1") {
+                    v.href = "//mall.qq.com/" + v.flag + "/?CLICKTAG=jcp.pc.index.nav";
+                    if (v.flag === 'x52') {
+                        v.href = "//mall.qq.com/x5/?CLICKTAG=jcp.pc.index.nav";
+                    }
+                    gamelist.push(v);
+                }
+            });
+            w.template(gamelist, "tpl_topinfo", "#dj_topinfo");
+        },
+        //购物车信息
+        loadCartInfo: function () {
+            need(['daoju.zb.model.cart', 'daoju.zb.model.comm'], function (cart, commModel) {
+                commModel.Login.register('Comm.cart', function (data) {
+                    if (!data.uin) { //未登录
+                        return;
+                    }
+                    window.biz = "zbdaoju";
+                    cart.simpleList('Comm.cart', function (json) {
+                        $("#blk_header_cart span").text(json.data.total).show();
+                    });
+                });
+            });
+        },
+        //登陆模块
+        login: function (callback) {
+            need("biz.login", function (LoginManager) {
+                LoginManager.init();
+                LoginManager.checkLogin(function () {
+                    LoginManager.getNickName(function(info){
+                        $("#userinfo").text(info.nickName);
+                        $.isFunction(callback) && callback();
+                    })
+                }, function () {
+                    //LoginManager.login();
+                });
+                //登陆区域绑定
+                $("body").delegate("#btn_header_login", "click", function () {
+                    LoginManager.init({
+                        needReloadPage: true
+                    });
+                    LoginManager.login();
+                });
+                $("body").delegate("#btn_header_logout", "click", function () {
+                    LoginManager.logout(function () {
+                        $("#blk_header_cart span").text('0');
+                    });
+                });
+            });
+        },
+        //跳转搜索页
+        search: function () {
+            var soso = $(".top-soso").val().replace(/^\s*/, '').replace(/\s*$/, '');
+            location.href = "http://" + location.hostname + "/search.shtml?CLICKTAG=jcp.pc.index.search&keyword=" + encodeURIComponent(soso);
+        },
+        //模板  模板id转为对象名
+        template: function (g, tpl, id, callback) {
+            need("util.template", function (template) {
+                $(id).html(template.parseDOMTemplate(tpl).process(g, tpl));
+                $.isFunction(callback) && callback();
+            });
+        }
+    };
+    //搜索按钮
+    $("#search").click(function () {
+        w.search();
+    });
+    //回车搜索
+    $(".top-soso").bind("keydown", function (e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+            w.search();
+        }
+    });
+    milo.ready(function () {
+        w.loadGamelist();
+        w.login(function () {
+            w.loadCartInfo();
+        });
+
+        need(['daoju.zb.comm'], function (comm) {
+            comm.tcssPing();
+            comm.easPing();
+        });
+        //        if (milo.cookie.get('debug') != 'gfd2342354fdghf') {
+        //            location.href = 'http://mall.qq.com/x5/';
+        //        }
+    });
+</script>
+<!-- footer E -->
+		<script src="__JS__/actual_ad_index.js"></script>
+		<script type="text/javascript">
+			$('.top-nav li').removeClass('nav-on').eq(0).addClass('nav-on');
+
+		    function changeflash(i) {
+		        window.currentindex = i;
+
+		        for (j = 0; j < focusCount; j++) {
+		            if (j == i) {
+		                $("#flash" + j).fadeIn("normal");
+		                $("#flash" + j).css("display", "block");
+		                $("#f" + j).removeClass();
+		                $("#f" + j).addClass("dq");
+		                //$("#flashBg").css("background-color",$("#flash"+j).attr("name"));
+		            }
+		            else {
+		                $("#flash" + j).css("display", "none");
+		                $("#f" + j).removeClass();
+		                $("#f" + j).addClass("no");
+		            }
+		        }
+		    }
+		    function initAm() {
+		        window.currentindex = 0;
+		        window.focusCount = $(".flash_bar div").length;
+		        startAm();
+		    }
+
+		    function startAm() {
+		        //大广告
+		        timerID = setInterval("timer_tick()", 5000);
+		    }
+
+		    function stopAm() {
+		        clearInterval(timerID);
+		    }
+
+		    window.timer_tick =  function() {
+		        //自动播放
+		        window.currentindex = window.currentindex >= window.focusCount -1 ? 0 : window.currentindex + 1;
+		        changeflash(window.currentindex);
+		    }
+
+			function indexPageinit() {
+                var modifiers = {
+                    addNum: function(val, num){
+                        return parseInt(val)+parseInt(num);
+                    }
+                };
+                actual_ad_index.index_eyes._MODIFIERS = actual_ad_index.index_recommend._MODIFIERS = modifiers;
+				w.template(actual_ad_index.index_eyes, "tpl1", "#dj1", function() {
+                    $(".flash_bar div").mouseover(function () {
+                        stopAm();
+                    }).mouseout(function () {
+                        startAm();
+                    });
+                    initAm();
+				});
+
+                w.template(actual_ad_index.index_tile, "tpl2", "#dj2");
+				var hotGoodIds = [];
+				$.each(actual_ad_index.index_recommend, function(k, v) {
+				    if(v.iTargetType=='1'){
+                        hotGoodIds.push(v.sLink);
+					}
+				});
+				need("daoju.zb.model.goods", function(goodsModel) {
+					goodsModel.getGoodsListByIds({
+						biz: "zbdaoju",
+						mall_ids: hotGoodIds.join()
+					}, function(json) {
+						$.each(json.data.list, function(k, v) {
+							$.each(actual_ad_index.index_recommend, function(k1, v1) {
+								if (v.iMallId == v1.sLink) {
+									v1.sBizCode = v.sBizCode;
+									v1.sPicLink = v.sProfileImg;
+									v1.iTotalSoldNum = v.iTotalSoldNum;
+									v1.iPriceReal = parseFloat(v.iPriceReal / 100).toFixed(2);
+								}
+								if(v1.sBizCode==='x52'){
+                                    v1.sBizCode='x5';
+								}
+							});
+						});
+						w.template(actual_ad_index.index_recommend, "tpl3", "#dj3");
+					});
+				})
+			}
+			milo.ready(function() {
+				indexPageinit();
+			});
+		</script>
+	</body>
+
+</html>
